@@ -50,6 +50,23 @@ Claude then follows the browser you use Xakto in.
 - Or ask for a change to the page. Claude asks whether you want it in the
   browser, in the code, or both.
 
+Things to ask Claude:
+
+- "Apply my Xakto edits."
+- "What's selected in Xakto? Give the card in my code the same spacing and
+  colours."
+- "Check this page in Xakto and fix the contrast findings in my code."
+- "Read the page's design system from Xakto and write it to DESIGN.md."
+
+## What it runs
+
+The plugin runs Xakto's relay, `xakto-mcp` from npm, at one fixed version,
+with Node. The relay listens on your own computer only (127.0.0.1, port
+47821) and answers Xakto in your browser once it proves the same pairing key.
+The relay itself sends nothing anywhere else. When Claude asks for a page
+element as a React component, the relay writes it to a temporary folder,
+`xakto-clones`, and gives Claude its path.
+
 More in the [Coding agents docs](https://xakto.app/docs-agents.html). Xakto's
 [Privacy Policy](https://xakto.app/privacy) and [Terms](https://xakto.app/terms)
 apply. The plugin is proprietary: see [LICENSE](LICENSE).

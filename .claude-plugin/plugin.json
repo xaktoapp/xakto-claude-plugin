@@ -1,7 +1,7 @@
 {
   "name": "xakto",
   "displayName": "Xakto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Edit a live page in Xakto, the Chrome extension, and Claude writes your edits into your code. Claude can also read the page, its design system and the Check's findings, and try changes you can undo.",
   "author": {
     "name": "Xakto",
@@ -27,7 +27,7 @@
   "mcpServers": {
     "xakto": {
       "command": "npx",
-      "args": ["-y", "xakto-mcp@^1.4.0"],
+      "args": ["-y", "xakto-mcp@1.4.0"],
       "env": {
         "XAKTO_TOKEN": "${user_config.pairing_key}"
       }
