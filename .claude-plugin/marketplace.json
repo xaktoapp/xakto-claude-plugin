@@ -1,0 +1,14 @@
+{
+  "name": "xakto",
+  "owner": {
+    "name": "Xakto"
+  },
+  "description": "Xakto's plugin for Claude Code: your edits on a live page, written into your code.",
+  "plugins": [
+    {
+      "name": "xakto",
+      "source": "./",
+      "description": "Edit a live page in Xakto, the Chrome extension, and Claude writes your edits into your code."
+    }
+  ]
+}

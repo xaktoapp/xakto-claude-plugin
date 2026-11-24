@@ -1,0 +1,17 @@
+Xakto for Claude Code
+Copyright (c) 2026 Kennedi Avelino. All rights reserved.
+
+This plugin - its settings, its skill, its text and its icon - is proprietary.
+You may install it in Claude Code and use it to connect Claude Code to the
+Xakto browser extension, under the Terms of Service at https://xakto.app/terms.
+
+The relay it runs, xakto-mcp, is installed from npm under its own licence.
+
+No licence is granted to copy, modify, publish, redistribute, sublicense or
+sell this plugin, in whole or in part, except as the copyright holder agrees
+in writing.
+
+Except as the Terms of Service say, it is provided "as is", without warranty
+of any kind.
+
+Contact: hello@xakto.app

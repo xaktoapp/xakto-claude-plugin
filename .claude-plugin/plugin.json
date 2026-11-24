@@ -1,0 +1,36 @@
+{
+  "name": "xakto",
+  "displayName": "Xakto",
+  "version": "1.0.0",
+  "description": "Edit a live page in Xakto, the Chrome extension, and Claude writes your edits into your code. Claude can also read the page, its design system and the Check's findings, and try changes you can undo.",
+  "author": {
+    "name": "Xakto",
+    "url": "https://xakto.app"
+  },
+  "homepage": "https://xakto.app/docs-agents.html",
+  "repository": "https://github.com/xaktoapp/xakto-claude-plugin",
+  "keywords": ["design", "chrome-extension", "live-edit", "design-system", "accessibility", "mcp"],
+  "icon": "./icon.png",
+  "documentationUrl": "https://xakto.app/docs-agents.html",
+  "supportUrl": "https://xakto.app/support",
+  "privacyPolicyUrl": "https://xakto.app/privacy",
+  "termsOfServiceUrl": "https://xakto.app/terms",
+  "userConfig": {
+    "pairing_key": {
+      "type": "string",
+      "title": "Xakto pairing key",
+      "description": "In Chrome, open Xakto's menu › Coding agent and press Copy key.",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "xakto": {
+      "command": "npx",
+      "args": ["-y", "xakto-mcp@^1.4.0"],
+      "env": {
+        "XAKTO_TOKEN": "${user_config.pairing_key}"
+      }
+    }
+  }
+}
